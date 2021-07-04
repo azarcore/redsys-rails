@@ -110,7 +110,7 @@ module Redsys
       end
     
       def encrypt_3DES(data, key)
-        cipher = OpenSSL::Cipher::Cipher.new('DES3')
+        cipher = OpenSSL::Cipher.new('DES3')
         cipher.encrypt
         cipher.key = key
         cipher.padding = 0
